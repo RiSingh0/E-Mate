@@ -1,0 +1,32 @@
+// echo  "<tr><td><input required type="radio" name="userans" value="<?php echo  $resultArray['option1'];?>">&nbsp;<?php echo  $resultArray['option1']; ?><br>";
+                  // echo  "<tr><td><input required type="radio" name="userans" value="<?php echo  $resultArray['option2'];?>">&nbsp;<?php echo  $resultArray['option2'];?></td></tr>";
+                  // echo  "<tr><td><input required type="radio" name="userans" value="<?php echo  $resultArray['option3'];?>">&nbsp;<?php echo  $resultArray['option3']; ?></td></tr>";
+                  // echo  "<tr><td><input required type="radio" name="userans" value="<?php echo  $resultArray['option4'];?>">&nbsp;<?php echo  $resultArray['option4']; ?><br><br><br></td></tr>";
+                  // echo  "<tr><td><button class="button3" name="click" >Next</button></td></tr>";  
+                   function ShowType($type){
+                    if ($type == 'Type1'){
+                      $version = 1;			
+                    } else {
+                        $version = 2;		
+                    }
+                    return $version;
+               }
+               
+               $ShowVersion = ShowType($type);
+               echo "The version is: " . ($ShowVersion) . "<br/><br />";
+
+
+
+
+
+
+               if($ans==$_POST['$id'] )
+                  {
+                    $total_marks=$total_marks+$marks;
+                  }
+                  }
+
+                  echo  "<tr><td><button class='button3' type='submit' name='click' >Submit</button></td></tr>";  
+                  
+                  echo $total_marks;
+                  
